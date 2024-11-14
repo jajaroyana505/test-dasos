@@ -1,0 +1,11 @@
+<?php
+function Tambah($start, $add, $count) {
+    $result = [];  
+    $current = $start; 
+    
+    for ($i = 0; $i < $count; $i++) {
+        $result[] = $current;  
+        $current += $add;  
+    }
+    echo implode(' ', $result); 
+}
